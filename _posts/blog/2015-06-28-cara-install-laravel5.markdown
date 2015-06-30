@@ -23,17 +23,19 @@ Pertama, download installer laravel:<!--more-->
 composer global require "laravel/installer=~1.1"
 {% endhighlight %}
 
-Selanjutnya, jalankan perintah berikut:
-{% highlight ruby %}
-laravel new blog
-{% endhighlight %}
-
 Selanjutnya,menambahkan path laravelnya di Environment Variables Windows..<br />
  klik kanan "My Computer > Properties > Advanced System Settings > Environment Variables", di bagian PATH edit lalu tambahkan path lokasi installer Laravelnya, misal di tempat saya
 
  >"C:\Users\NamaUser\AppData\Roaming\Composer\vendor\bin" 
 
- setelah itu restart komputer
+ setelah itu restart CMD/komputer
+
+
+Selanjutnya, jalankan perintah berikut:
+{% highlight ruby %}
+laravel new blog
+{% endhighlight %}
+
  
  <br />
 Kelebihan<br />
