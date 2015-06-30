@@ -29,7 +29,7 @@ colors:  #in hex code if not noted else
 social:
  
   - title: facebook
-    url: www.facebook.com/adit.thearc
+    url: "http://facebook.com/adit.thearc"
   - title: twitter
     url: 
   
