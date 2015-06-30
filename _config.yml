@@ -8,6 +8,7 @@ baseurl: "" #important: start with /
 url: "http://yourdomain.com"
 
 # Build settings
+pygments: true
 markdown: kramdown
 permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
@@ -28,12 +29,12 @@ colors:  #in hex code if not noted else
 social:
  
   - title: facebook
-    url:
+    url: www.facebook.com/adit.thearc
   - title: twitter
     url: 
   
-  - title: tumblr
-    url: 
+  - title: github
+    url: www.github.com/adit33
     
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 
@@ -94,7 +95,7 @@ clients:
 about: "Life never better by CHANCE but will be better by CHANGE"
 
 # Testimonial content. Shown on Home and About page. 
-# testimonial:
-#     message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-#     author: Marcel Newman
-#     position: WEB DESIGNER - BLACKTIE.CO
+testimonial:
+    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    author: Marcel Newman
+    position: WEB DESIGNER - BLACKTIE.CO
