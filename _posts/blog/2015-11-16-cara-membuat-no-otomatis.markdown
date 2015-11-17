@@ -7,7 +7,7 @@ categories:
 - blog
 - Tips&Tricks
 - Code-Snippets
-- laravel
+
 img: laravel-600x600.png
 thumb: laravel-600x600.png
 ---
