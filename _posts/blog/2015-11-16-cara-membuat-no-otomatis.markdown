@@ -12,13 +12,18 @@ img: laravel-600x600.png
 thumb: laravel-600x600.png
 ---
 
-<b>Membuat no Otomatis di laravel</b> 
-
-
-Saya rekomendasikan Anda untuk menginstall composer terlebih dahulu.
-
-####Cara 1: Via Installer Laravel
+####Membuat no Otomatis di laravel
 Pertama, download installer laravel:<!--more-->
+
+{% highlight ruby %}
+    public static function convertdate(){
+        date_default_timezone_set('Asia/Jakarta');
+        $date = date('dmy');
+        return $date;
+    }
+{% endhighlight %}
+
+
 
 {% highlight ruby %}
 public static function autonumber($barang,$primary,$prefix){
