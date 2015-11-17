@@ -13,7 +13,7 @@ thumb: laravel-600x600.png
 ---
 
 ####Membuat no Otomatis di laravel
-Pertama, download installer laravel:<!--more-->
+<!--more-->
 
 {% highlight ruby %}
     public static function convertdate(){
@@ -48,7 +48,7 @@ public static function autonumber($barang,$primary,$prefix){
 
 Cara Pake<br />
  
-Selanjutnya, jalankan perintah berikut:
+
 {% highlight ruby %}
  $table="barang";
         $primary="idBarang";
