@@ -2,7 +2,7 @@
 layout: post
 title: "Membuat No Otomatis di laravel"
 date: 2015-11-16 12:00:00
-author: Admin
+author: Aditya Suryadi
 categories:
 - blog
 - Tips&Tricks
