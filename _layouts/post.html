@@ -14,6 +14,19 @@ layout: default
             <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
               
             {{ content }}
+<!-- PLUGIN FB -->
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+<div class="fb-comments" 
+data-href="{{ page.url | prepend: site.baseurl }}" 
+data-numposts="5">
+</div>
+
 
 <div id="disqus_thread"></div>
 <script id="dsq-count-scr" src="//adityanote.disqus.com/count.js" async></script>
