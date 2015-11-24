@@ -17,8 +17,8 @@ thumb: php.jpg
 
 syntax untuk menghitung selisih tanggal dalam hitungan tahun,hari,bulan;
 
-{% highlight ruby %}
-  <!DOCTYPE html>
+{% highlight HTML %}
+ <!DOCTYPE html>
  <html lang="en">
  <head>
  	<meta charset="UTF-8">
@@ -28,10 +28,10 @@ syntax untuk menghitung selisih tanggal dalam hitungan tahun,hari,bulan;
  <body>
  <form action="tgl.php" method="post">
   <div class="row">
-     <div class="col s6">TGL PERTAMA<input type="text" name="tgl1" class="datepicker"></div>
-     <div class="col s6"> TGL KEDUA<input type="text" name="tgl2" class="datepicker"></div>
+     <div class="col s6">TGL PERTAMA<input type="text" name="tgl1" class="datepicker" id="vld1"></div>
+     <div class="col s6"> TGL KEDUA<input type="text" name="tgl2" class="datepicker" id="vld2"></div>
      <div class="col s12">
-		<button class="btn waves-effect waves-light" type="submit" name="action" onclick="window.open('http://adit33.github.io')">Submit
+		<button class="btn waves-effect waves-light" type="submit" id="submit" name="action" >Submit
 	    <i class="material-icons right"></i>
 	  	</button>
      </div>	
@@ -48,7 +48,25 @@ syntax untuk menghitung selisih tanggal dalam hitungan tahun,hari,bulan;
     format: 'yyyy/mm/dd'
   });
  </script>
+ <script>
+ $("#submit").click(function(){ 
+	var vld1 = $("#vld1").val();
+	var vld2 = $("#vld2").val();
+	
+	if( vld1 != '' && vld2 !='' ){
+		return true; 
+	}	
+	else{
+		alert("Tolong diisi...!!!!!!");
+		return false;
+	}
+});
+ </script>
  </html>
+
+{% endhighlight %}
+
+{% highlight ruby %}
  <?php
 
 class tgl{
