@@ -9,7 +9,7 @@ categories:
 - Tips&Tricks
 - Code-Snippets
 - PHP
-img: 
+img: datediff.png
 thumb: php.jpg
 ---
 
