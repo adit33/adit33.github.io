@@ -13,17 +13,60 @@ img:
 thumb: php.jpg
 ---
 
-<b>Menghitung Selisih tanggal di php</b> 
+###Menghitung Selisih tanggal di php
 
+syntax untuk menghitung selisih tanggal dalam hitungan tahun,hari,bulan;
 
 {% highlight ruby %}
+  <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ </head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+ <body>
+ <form action="tgl.php" method="post">
+  <div class="row">
+     <div class="col s6">TGL PERTAMA<input type="text" name="tgl1" class="datepicker"></div>
+     <div class="col s6"> TGL KEDUA<input type="text" name="tgl2" class="datepicker"></div>
+     <div class="col s12">
+		<button class="btn waves-effect waves-light" type="submit" name="action" onclick="window.open('http://adit33.github.io')">Submit
+	    <i class="material-icons right"></i>
+	  	</button>
+     </div>	
+     <div class="col s12"></div>	
+    </div>
+    </form>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+   <script>
+ 	 $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year
+    format: 'yyyy/mm/dd'
+  });
+ </script>
+ </html>
  <?php
+
 class tgl{
    function datediff($tgl1, $tgl2){
 		 $tgl1 = (is_string($tgl1) ? strtotime($tgl1) : $tgl1);
 		 $tgl2 = (is_string($tgl2) ? strtotime($tgl2) : $tgl2);
-		 $diff_secs = $tgl1 - $tgl2;
-		 $base_year = min(date("Y", $tgl1), date("Y", $tgl2));
+
+		 if($tgl1<$tgl2){
+		 	$a=$tgl2;
+		 	$b=$tgl1;
+		 }
+		 else{
+		 	$a=$tgl1;
+		 	$b=$tgl2;
+		 }
+
+		 $diff_secs = $a - $b;
+		 $base_year = min(date("Y", $a), date("Y", $b));
 		 $diff = mktime(0, 0, $diff_secs, 1, 1, $base_year);
 		 
 		 return array( "years" => date("Y", $diff) - $base_year,
@@ -39,13 +82,22 @@ class tgl{
 						"seconds" => (int) date("s", $diff)  );
  	}
 }
-$tgl1="2015/10/01/";
-$tgl2="2014/08/01";
+
+
+if(isset($_POST['tgl1']) && isset($_POST['tgl2'])){
+$tgl1=$_POST['tgl1'];
+$tgl2=$_POST['tgl2'];
 $tgl=new tgl();
 $tgl=$tgl->datediff($tgl1,$tgl2);
 echo "Selisih dari ".$tgl1 ." dan ".$tgl2."<br/>";
 echo abs($tgl['years'])." Tahun/ ".$tgl['months']." Bulan/ ".$tgl['days']." Hari ";
+}
+else{
+	echo "Masukan tanggal";
+}
 ?>
+
+
 
 {% endhighlight %}
 
