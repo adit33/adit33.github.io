@@ -16,7 +16,7 @@ thumb: php.jpg
 ###Menghitung Selisih tanggal di php
 
 syntax untuk menghitung selisih tanggal dalam hitungan tahun,hari,bulan;
-
+<!--more-->
 {% highlight HTML %}
  <!DOCTYPE html>
  <html lang="en">
