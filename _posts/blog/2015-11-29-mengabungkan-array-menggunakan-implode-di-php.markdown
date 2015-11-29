@@ -9,7 +9,7 @@ categories:
 - Tips&Tricks
 - Code-Snippets
 - PHP
-img: implode.jpg
+img: implode.JPG
 thumb: php.jpg
 ---
 
