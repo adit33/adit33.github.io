@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Membuat reload berdasarkan id html menggunakan jquery"
-date: 2015-11-17 12:30:00
+date: 2015-12-08 08:20:00
 author: Aditya
 categories:
 - blog
