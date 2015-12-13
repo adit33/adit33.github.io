@@ -1,7 +1,7 @@
 layout: project
 title:  "DOCUMENT CONTROLING"
 date:   2015-12-13 11:32:46
-author: Aditya S
+author: Aditya Suryadi
 categories:
 - project
 img: docon-dashboard.jpg
