@@ -8,9 +8,10 @@ categories:
 img: portfolio_06.jpg
 thumb: thumb02.jpg
 carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+- docon-dashboard.jpg
+- docon-upload.jpg
+- docon-lihat.jpg
+- docon-detail.jpg
 client: Wonder Corp.
 website: http://blacktie.co
 ---
