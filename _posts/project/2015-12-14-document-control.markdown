@@ -5,18 +5,23 @@ date:   2015-12-14 06:24:46
 author: Aditya Suryadi
 categories:
 - project
-img: portfolio_06.jpg
+img: docon-dashboard.jpg
 thumb: thumb02.jpg
 carousel:
 - docon-dashboard.jpg
 - docon-upload.jpg
 - docon-lihat.jpg
 - docon-detail.jpg
-client: Wonder Corp.
-website: http://blacktie.co
----
-####YOUR PROJECT NAME
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+- docon-chart.jpg
 
-####Our Proposal
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+---
+####APLIKASI DOCUMENT CONTROL
+Aplikasi ini Membantu management representative dalam menjalankan  prosedur pengendalian dokumen,mengurangi tempat penyimpanan dokumen secara konvensional,Untuk mempermudah mengakses dokumen antar departement.
+
+####Beberapa fitur di Aplikasi ini
+<li>	Upload dokumen 
+<li>	Download dokumen
+<li>	Pengesahan dokumen
+<li>	Penolakan dokumen
+<li>	Cetak dokumen
+<li>	Cari dokumen

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Menambah textbox menggunakan jquery"
+title: "Membuat Input Hanya angka menggunakan angularJs directive"
 date: 2015-06-30 08:40:00
 author: Aditya
 categories:

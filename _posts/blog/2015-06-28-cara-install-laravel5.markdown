@@ -3,6 +3,7 @@ layout: post
 title: "Cara Instal Laravel 5"
 date: 2015-06-28 15:00:00
 author: Admin
+comments: yes
 categories:
 - blog
 - Tips&Tricks
