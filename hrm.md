@@ -23,30 +23,30 @@ Apply the `half` class like so to display two images side by side that share the
 
 
 <figure class="half">
-	<img src="/images/1.png" alt="">
-	<img src="/images/2.png" alt="">
-	<img src="/images/3.png" alt="">
-	<img src="/images/4.png" alt="">
+	<img src="/images/hrm/1.png" alt="">
+	<img src="/images/hrm/2.png" alt="">
+	<img src="/images/hrm/3.png" alt="">
+	<img src="/images/hrm/4.png" alt="">
 </figure>
 
 <figure class="half">
-	<img src="/images/5.png" alt="">
-	<img src="/images/6.png" alt="">
-	<img src="/images/7.png" alt="">
-	<img src="/images/8.png" alt="">
+	<img src="/images/hrm/5.png" alt="">
+	<img src="/images/hrm/6.png" alt="">
+	<img src="/images/hrm/7.png" alt="">
+	<img src="/images/hrm/8.png" alt="">
 </figure>
 
 <figure class="half">
-	<img src="/images/9.png" alt="">
-	<img src="/images/10.png" alt="">
-	<img src="/images/11.png" alt="">
-	<img src="/images/12.png" alt="">
+	<img src="/images/hrm/9.png" alt="">
+	<img src="/images/hrm/10.png" alt="">
+	<img src="/images/hrm/11.png" alt="">
+	<img src="/images/hrm/12.png" alt="">
 </figure>
 
 <figure class="half">
-	<img src="/images/13.png" alt="">
-	<img src="/images/14.png" alt="">
-	<img src="/images/15.png" alt="">
-	<img src="/images/16.png" alt="">
+	<img src="/images/hrm/13.png" alt="">
+	<img src="/images/hrm/14.png" alt="">
+	<img src="/images/hrm/15.png" alt="">
+	<img src="/images/hrm/16.png" alt="">
 </figure>
 
