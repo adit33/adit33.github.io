@@ -21,22 +21,32 @@ share:
 
 Apply the `half` class like so to display two images side by side that share the same caption.
 
-{% highlight html %}
-<figure class="half">
-	<img src="/images/image-filename-1.jpg" alt="">
-	<img src="/images/image-filename-2.jpg" alt="">
-	<figcaption>Caption describing these two images.</figcaption>
-</figure>
-{% endhighlight %}
-
-And you'll get something that looks like this:
 
 <figure class="half">
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt=""></a>
-	<img src="http://placehold.it/600x300.jpg" alt="">
-	<img src="http://placehold.it/600x300.jpg" alt="">
-	<figcaption>Two images.</figcaption>
+	<img src="/images/1.png" alt="">
+	<img src="/images/2.png" alt="">
+	<img src="/images/3.png" alt="">
+	<img src="/images/4.png" alt="">
 </figure>
 
+<figure class="half">
+	<img src="/images/5.png" alt="">
+	<img src="/images/6.png" alt="">
+	<img src="/images/7.png" alt="">
+	<img src="/images/8.png" alt="">
+</figure>
+
+<figure class="half">
+	<img src="/images/9.png" alt="">
+	<img src="/images/10.png" alt="">
+	<img src="/images/11.png" alt="">
+	<img src="/images/12.png" alt="">
+</figure>
+
+<figure class="half">
+	<img src="/images/13.png" alt="">
+	<img src="/images/14.png" alt="">
+	<img src="/images/15.png" alt="">
+	<img src="/images/16.png" alt="">
+</figure>
 
