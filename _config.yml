@@ -46,8 +46,8 @@ owner:
   name:           Aditya Suryadi
   site:          #
   avatar:         images/avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  bio:            "just ordinary people"
+  #email:          you@email.com
   # Twitter nick for use in Twitter cards and follow button.
  # twitter: aron_bordin # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
@@ -61,8 +61,8 @@ twitter:
 social:
   - title: "github"
     url: "https://github.com/adit33"
-  # - title: "linkedin"
-  #   url: "https://br.linkedin.com/in/aronbordin"
+  - title: "linkedin"
+    url: "https://id.linkedin.com/in/aditya-suryadi-276187b5"
   # - title: "youtube"
   #   url: "https://www.youtube.com/channel/UCfnSek-9HPWOx5e2pH7VFgg"
 
