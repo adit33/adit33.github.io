@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Membuat Input Hanya angka menggunakan angularJs directive &#8211; COPY-CODE</title>
+<title>Backup Db Menggunakan Php Dan Mysql Di Windows &#8211; COPY-CODE</title>
 <meta name="description" content="Describe your website here.">
 <meta name="keywords" content="">
 
@@ -14,9 +14,9 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Membuat Input Hanya angka menggunakan angularJs directive">
+<meta property="og:title" content="Backup Db Menggunakan Php Dan Mysql Di Windows">
 <meta property="og:description" content="Describe your website here.">
-<meta property="og:url" content="http://localhost:4000/blog/tips&tricks/code-snippets/angular-input-angka/">
+<meta property="og:url" content="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/">
 <meta property="og:site_name" content="COPY-CODE">
 <meta property="og:image" content="http://localhost:4000/images/images/logo.png">
 
@@ -24,7 +24,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/blog/tips&tricks/code-snippets/angular-input-angka/">
+<link rel="canonical" href="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="COPY-CODE Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -129,9 +129,9 @@
 <div class="entry-header">
   <div class="header-title">
     <div class="header-title-wrap">
-      <h1>Membuat Input Hanya angka menggunakan angularJs directive</h1>
+      <h1>Backup Db Menggunakan Php Dan Mysql Di Windows</h1>
       
-        <h2><span class="entry-date date published updated"><time datetime="2015-11-17T07:30:00-05:00">November 17, 2015</time></span></h2>
+        <h2><span class="entry-date date published updated"><time datetime="2017-01-18T22:35:04-05:00">January 18, 2017</time></span></h2>
       
 
       
@@ -183,40 +183,21 @@
   <article class="hentry">
     <div class="entry-content">
         
-      <h1 class="post-title entry-title">Membuat Input Hanya angka menggunakan angularJs directive</h1>
-      <p><b></b> 
-<br />
-Membuat Input Hanya angka menggunakan angularJs directive
-<!--more--></p>
+      <h1 class="post-title entry-title">Backup Db Menggunakan Php Dan Mysql Di Windows</h1>
+      
+<figure class="highlight"><pre><code class="language-php" data-lang="php">	<span class="cp">&lt;?php</span> 
+	   
+	    <span class="nv">$db_name</span><span class="o">=</span><span class="s2">"my_database.sql"</span><span class="p">;</span>
+	    <span class="nv">$user</span><span class="o">=</span><span class="s1">'user'</span><span class="p">;</span>
+	    <span class="nv">$password</span><span class="o">=</span><span class="s1">'password'</span><span class="p">;</span>
+	    <span class="nv">$db</span><span class="o">=</span><span class="s1">'my_database'</span><span class="p">;</span>
+	    <span class="nv">$dir</span><span class="o">=</span><span class="nx">storage_path</span><span class="p">();</span> <span class="c1">// direktori hasil backup yang anda inginkan kebetulan di sini saya menggunakan laravel jadi menggunkan helper
+</span>
+	    <span class="nv">$command</span> <span class="o">=</span> <span class="s2">"D:/xampp/mysql/bin/mysqldump -u"</span> <span class="o">.</span> <span class="nv">$user</span> <span class="o">.</span><span class="s2">" -p"</span> <span class="o">.</span> <span class="nv">$password</span> <span class="o">.</span> <span class="s2">" "</span> <span class="o">.</span> <span class="nv">$db</span> <span class="o">.</span> <span class="s2">" &gt;"</span> <span class="o">.</span> <span class="nv">$dir</span> <span class="o">.</span> <span class="nx">DIRECTORY_SEPARATOR</span> <span class="o">.</span> <span class="nv">$db_name</span><span class="p">;</span>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'http'</span><span class="p">,[],</span><span class="kd">function</span><span class="p">(</span><span class="nx">$interpolateProvider</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">$interpolateProvider</span><span class="p">.</span><span class="nx">startSymbol</span><span class="p">(</span><span class="s1">'&lt;%'</span><span class="p">);</span>
-    <span class="nx">$interpolateProvider</span><span class="p">.</span><span class="nx">endSymbol</span><span class="p">(</span><span class="s1">'%&gt;'</span><span class="p">);</span>
-<span class="p">});</span>
+	    <span class="nb">exec</span><span class="p">(</span><span class="nv">$command</span><span class="p">);</span>
 
-<span class="nx">app</span><span class="p">.</span><span class="nx">directive</span><span class="p">(</span><span class="s1">'numbersOnly'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-   <span class="k">return</span> <span class="p">{</span>
-     <span class="na">require</span><span class="p">:</span> <span class="s1">'ngModel'</span><span class="p">,</span>
-     <span class="na">link</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">,</span> <span class="nx">modelCtrl</span><span class="p">)</span> <span class="p">{</span>
-       <span class="nx">modelCtrl</span><span class="p">.</span><span class="nx">$parsers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">inputValue</span><span class="p">)</span> <span class="p">{</span>
-           <span class="k">if</span> <span class="p">(</span><span class="nx">inputValue</span> <span class="o">==</span> <span class="kc">undefined</span><span class="p">)</span> <span class="k">return</span> <span class="s1">''</span> 
-           <span class="kd">var</span> <span class="nx">transformedInput</span> <span class="o">=</span> <span class="nx">inputValue</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/</span><span class="se">[^</span><span class="sr">0-9</span><span class="se">]</span><span class="sr">/g</span><span class="p">,</span> <span class="s1">''</span><span class="p">);</span> 
-           <span class="k">if</span> <span class="p">(</span><span class="nx">transformedInput</span><span class="o">!=</span><span class="nx">inputValue</span><span class="p">)</span> <span class="p">{</span>
-              <span class="nx">modelCtrl</span><span class="p">.</span><span class="nx">$setViewValue</span><span class="p">(</span><span class="nx">transformedInput</span><span class="p">);</span>
-              <span class="nx">modelCtrl</span><span class="p">.</span><span class="nx">$render</span><span class="p">();</span>
-           <span class="p">}</span>         
-
-           <span class="k">return</span> <span class="nx">transformedInput</span><span class="p">;</span>         
-       <span class="p">});</span>
-     <span class="p">}</span>
-   <span class="p">};</span>
-<span class="p">});</span>
-     </code></pre></figure>
-
-<p>Di HTML</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">numbers-only=</span><span class="s">"numbers-only"</span><span class="nt">&gt;</span></code></pre></figure>
-
+	<span class="cp">?&gt;</span></code></pre></figure>
 
       <footer class="entry-meta">
         <span class="entry-tags"></span>
@@ -224,9 +205,9 @@ Membuat Input Hanya angka menggunakan angularJs directive
         <span class="author vcard"><span class="fn">Aditya Suryadi</span></span>
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/tips&tricks/code-snippets/angular-input-angka/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/blog/tips&tricks/code-snippets/angular-input-angka/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/blog/tips&tricks/code-snippets/angular-input-angka/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
 
@@ -261,23 +242,23 @@ Membuat Input Hanya angka menggunakan angularJs directive
     <div class="read-more">
   
     <div class="read-more-header">
-      <a href="http://localhost:4000/blog/tips&tricks/code-snippets/cara-membuat-no-otomatis/" class="read-more-btn">Read More</a>
+      <a href="http://localhost:4000/php/merubah-string-jadi-variabel/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/" title="Backup Db Menggunakan Php Dan Mysql Di Windows">Backup Db Menggunakan Php Dan Mysql Di Windows</a></h3>
-      <p>{% highlight php %}	" . $dir . DIRECTORY_SEPARATOR . $db_name;	    exec($command);	?>{% endhighlight %}&hellip; <a href="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/">Continue reading</a></p>
+      <h3><a href="http://localhost:4000/php/merubah-string-jadi-variabel/" title="merubah string jadi variabel di PHP">merubah string jadi variabel di PHP</a></h3>
+      <p>merubah string jadi variabel di PHP  mengguanakan $$&lt;?php   for ($i=1; $i &lt;= 10; $i++) {    $b='bulan'.$i;    $$b='bulan ke'.$i;	ec...&hellip; <a href="http://localhost:4000/php/merubah-string-jadi-variabel/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/php/merubah-string-jadi-variabel/" title="merubah string jadi variabel di PHP">merubah string jadi variabel di PHP</a></h4>
-        <span>Published on January 13, 2017</span>
+        <h4><a href="http://localhost:4000/intro/sample-post/" title="Sample Post">Sample Post</a></h4>
+        <span>Published on December 02, 2016</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/intro/sample-post/" title="Sample Post">Sample Post</a></h4>
-        <span>Published on December 02, 2016</span>
+        <h4><a href="http://localhost:4000/intro/code-highlighting-post/" title="Syntax Highlighting Post">Syntax Highlighting Post</a></h4>
+        <span>Published on December 01, 2016</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->
