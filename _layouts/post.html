@@ -9,6 +9,15 @@
 
 <body id="post" {% if page.image.feature %}class="feature"{% endif %}>
 
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 {% include browser-upgrade.html %}
 {% include header.html %}
 
@@ -32,9 +41,16 @@
       </footer>
     </div><!-- /.entry-content -->
     {% include author.html %}
-    {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->
 
-    <div class="fb-comments" data-href="http://adit33.github.io{{ post.url }}" data-numposts="5"></div>
+
+    {% if page.comments != false and site.disqus_shortname %}
+
+    <div class="read-more">
+      {% include facebook_comment.html %}
+      <div id="disqus_thread"></div><!-- /#disqus_thread -->  
+    </div>
+    
+   
     {% endif %}
     {% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}
   </article>
