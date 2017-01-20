@@ -19,7 +19,9 @@ litle bit application that I have made
 # CIS (Continuous Improvement System)
 <figure>
 	<a href="/images/cis/login.png"><img src="/images/cis/login.png" alt=""></a>
-	<figcaption><a href="/images/cis/login.png" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+	<figcaption><a href="/images/cis/login.png" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Aplikasi reporting problem request</a>.</figcaption>
 </figure>
+
+<a href="{{ site.url }}/cis"><span class="term">Read More</span></a>
 
 

@@ -19,7 +19,7 @@ share:
 
 ### Two Up
 
-Apply the `half` class like so to display two images side by side that share the same caption.
+Aplikasi Penilaian karyawan dan report absensi 
 
 
 <figure class="half">
