@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Our new logo is here &#8211; COPY-CODE</title>
+<title>Dynamic_textbox_jquery &#8211; COPY-CODE</title>
 <meta name="description" content="Describe your website here.">
 <meta name="keywords" content="">
 
@@ -14,9 +14,9 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Our new logo is here">
+<meta property="og:title" content="Dynamic_textbox_jquery">
 <meta property="og:description" content="Describe your website here.">
-<meta property="og:url" content="http://localhost:4000/blog/web-design/development/our-new-logo-is-here/">
+<meta property="og:url" content="http://localhost:4000/dynamic_textbox_jquery/">
 <meta property="og:site_name" content="COPY-CODE">
 <meta property="og:image" content="http://localhost:4000/images/images/logo.png">
 
@@ -24,7 +24,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/blog/web-design/development/our-new-logo-is-here/">
+<link rel="canonical" href="http://localhost:4000/dynamic_textbox_jquery/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="COPY-CODE Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -138,9 +138,9 @@
 <div class="entry-header">
   <div class="header-title">
     <div class="header-title-wrap">
-      <h1>Our new logo is here</h1>
+      <h1>Dynamic_textbox_jquery</h1>
       
-        <h2><span class="entry-date date published updated"><time datetime="2014-04-25T12:54:46-04:00">April 25, 2014</time></span></h2>
+        <h2><span class="entry-date date published updated"><time datetime="2017-01-25T01:46:47-05:00">January 25, 2017</time></span></h2>
       
 
       
@@ -192,25 +192,31 @@
   <article class="hentry">
     <div class="entry-content">
         
-      <h1 class="post-title entry-title">Our new logo is here</h1>
-      <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <h1 class="post-title entry-title">Dynamic_textbox_jquery</h1>
+      <h1 id="menambah-dan-menghapus-textbox-dinamis">Menambah dan Menghapus Textbox Dinamis</h1>
 
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <!--more-->
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>HTML</p>
 
-<p>Contrary to popular belief, <b>Lorem Ipsum is not simply random text</b>. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at <a href="https://github.com/jekyll/jekyll">Hampden-Sydney College</a> in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.&lt;</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"kmp"</span><span class="nt">&gt;&lt;/div&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-xs btn-primary"</span> <span class="na">value=</span><span class="s">"Add"</span> <span class="na">id=</span><span class="s">"append"</span><span class="nt">&gt;&lt;/input&gt;</span></code></pre></figure>
 
-<p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+<p>Jquery</p>
 
-<p>####Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span><span class="o">&gt;</span>
+	<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+		<span class="nx">$</span><span class="p">(</span><span class="s2">"#append"</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+			<span class="nx">$</span><span class="p">(</span><span class="s2">"#kmp"</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">'&lt;div&gt;&lt;input type="text"&gt;&lt;/input&gt;&lt;a href="#" class="hapus"&gt;Remove&lt;/a&gt;&lt;/div&gt;&lt;br&gt;'</span><span class="p">)</span>
+		<span class="p">})</span>
+    
+  		<span class="kd">var</span> <span class="nx">kmp</span><span class="o">=</span><span class="nx">$</span><span class="p">(</span><span class="s2">"#kmp"</span><span class="p">);</span>  
 
-<blockquote>
-  <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-</blockquote>
-
-<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
-
+		<span class="nx">$</span><span class="p">(</span><span class="nx">kmp</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span><span class="s1">'.hapus'</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+    	<span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+		<span class="nx">jQuery</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">parent</span><span class="p">().</span><span class="nx">remove</span><span class="p">();</span>
+    	<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+		<span class="p">})</span>
+	<span class="p">})</span>
+<span class="o">&lt;</span><span class="sr">/script&gt;</span></code></pre></figure>
 
       <footer class="entry-meta">
         <span class="entry-tags"></span>
@@ -218,9 +224,9 @@ It is a long established fact that a reader will be distracted by the readable c
         <span class="author vcard"><span class="fn">Aditya Suryadi</span></span>
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/web-design/development/our-new-logo-is-here/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/blog/web-design/development/our-new-logo-is-here/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/blog/web-design/development/our-new-logo-is-here/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/dynamic_textbox_jquery/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/dynamic_textbox_jquery/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/dynamic_textbox_jquery/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
 
@@ -269,23 +275,23 @@ It is a long established fact that a reader will be distracted by the readable c
     <div class="read-more">
   
     <div class="read-more-header">
-      <a href="http://localhost:4000/blog/tips&tricks/code-snippets/logo-design-contest-starts-now/" class="read-more-btn">Read More</a>
+      <a href="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://localhost:4000/dynamic_textbox_jquery/" title="Dynamic_textbox_jquery">Dynamic_textbox_jquery</a></h3>
-      <p># Menambah dan Menghapus Textbox DinamisHTML{% highlight html %}		{% endhighlight %}Jquery{% highlight javascript %}{% endhighlight %}&hellip; <a href="http://localhost:4000/dynamic_textbox_jquery/">Continue reading</a></p>
+      <h3><a href="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/" title="Backup Db Menggunakan Php Dan Mysql Di Windows">Backup Db Menggunakan Php Dan Mysql Di Windows</a></h3>
+      <p>	&lt;?php 	   	    $db_name="my_database.sql";	    $user='user';	    $password='password';	    $db='my_database';	    $dir=storage_path()...&hellip; <a href="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/" title="Backup Db Menggunakan Php Dan Mysql Di Windows">Backup Db Menggunakan Php Dan Mysql Di Windows</a></h4>
-        <span>Published on January 18, 2017</span>
+        <h4><a href="http://localhost:4000/php/merubah-string-jadi-variabel/" title="merubah string jadi variabel di PHP">merubah string jadi variabel di PHP</a></h4>
+        <span>Published on January 13, 2017</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/php/merubah-string-jadi-variabel/" title="merubah string jadi variabel di PHP">merubah string jadi variabel di PHP</a></h4>
-        <span>Published on January 13, 2017</span>
+        <h4><a href="http://localhost:4000/intro/sample-post/" title="Sample Post">Sample Post</a></h4>
+        <span>Published on December 02, 2016</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->
