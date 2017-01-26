@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Menggabungkan array menjadi satu menggunakan implode &#8211; COPY-CODE</title>
+<title>Dynamic Textbox Menggunkan Vue Js &#8211; COPY-CODE</title>
 <meta name="description" content="Describe your website here.">
 <meta name="keywords" content="">
 
@@ -14,9 +14,9 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Menggabungkan array menjadi satu menggunakan implode">
+<meta property="og:title" content="Dynamic Textbox Menggunkan Vue Js">
 <meta property="og:description" content="Describe your website here.">
-<meta property="og:url" content="http://localhost:4000/blog/tips&tricks/code-snippets/php/mengabungkan-array-menggunakan-implode-di-php/">
+<meta property="og:url" content="http://localhost:4000/vue.js,jquery,java/script/dynamic-textbox-menggunkan-vue-js/">
 <meta property="og:site_name" content="COPY-CODE">
 <meta property="og:image" content="http://localhost:4000/images/images/logo.png">
 
@@ -24,7 +24,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/blog/tips&tricks/code-snippets/php/mengabungkan-array-menggunakan-implode-di-php/">
+<link rel="canonical" href="http://localhost:4000/vue.js,jquery,java/script/dynamic-textbox-menggunkan-vue-js/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="COPY-CODE Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -138,9 +138,9 @@
 <div class="entry-header">
   <div class="header-title">
     <div class="header-title-wrap">
-      <h1>Menggabungkan array menjadi satu menggunakan implode</h1>
+      <h1>Dynamic Textbox Menggunkan Vue Js</h1>
       
-        <h2><span class="entry-date date published updated"><time datetime="2015-11-29T06:10:00-05:00">November 29, 2015</time></span></h2>
+        <h2><span class="entry-date date published updated"><time datetime="2017-01-25T22:00:42-05:00">January 25, 2017</time></span></h2>
       
 
       
@@ -192,26 +192,54 @@
   <article class="hentry">
     <div class="entry-content">
         
-      <h1 class="post-title entry-title">Menggabungkan array menjadi satu menggunakan implode</h1>
-      <p>###Menggabungkan array menjadi satu</p>
+      <h1 class="post-title entry-title">Dynamic Textbox Menggunkan Vue Js</h1>
+      
+<figure class="highlight"><pre><code class="language-html" data-lang="html">	
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"app"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">v-on:click=</span><span class="s">"addField(0)"</span><span class="na">class=</span><span class="s">"btn btn-xs btn-primary"</span><span class="nt">&gt;</span>Add<span class="nt">&lt;/button&gt;</span>
 
-<p>Jika  explode  bertugas  untuk  memecah  menjadi  elemen  array,  implode  berfungsi 
-sebaliknya,  yakni  menggabungkan  array  menjadi  satu  string
-<br />
-<br />
-<!--more--></p>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"kmp"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                                    
+  <span class="nt">&lt;div</span> <span class="na">v-for=</span><span class="s">"field in fields"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">v-model=</span><span class="s">"field.nama"</span><span class="nt">&gt;</span>
+   
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span>
-<span class="vg">$arraybelajar</span> <span class="o">=</span> <span class="n">array</span><span class="p">(</span><span class="s2">"saya"</span><span class="p">,</span> <span class="s2">"Rajin"</span><span class="p">,</span> <span class="s2">"belajar"</span><span class="p">,</span> <span class="s2">"dan"</span><span class="p">,</span> 
-<span class="s2">"Menabung"</span><span class="p">);</span>
-<span class="n">echo</span> <span class="s2">"&lt;h1&gt;data masih berupa array&lt;/h1&gt;&lt;br&gt;"</span><span class="p">;</span>
-<span class="k">for</span><span class="p">(</span><span class="vg">$i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="vg">$i</span><span class="o">&lt;</span><span class="n">count</span><span class="p">(</span><span class="vg">$arraybelajar</span><span class="p">);</span><span class="vg">$i</span><span class="o">++</span><span class="p">){</span>
-<span class="n">echo</span> <span class="s2">"index ke-"</span><span class="o">.</span><span class="vg">$i</span><span class="o">.</span><span class="s2">" "</span><span class="o">.</span><span class="vg">$arraybelajar</span><span class="p">[</span><span class="vg">$i</span><span class="p">]</span><span class="o">.</span><span class="s2">"&lt;/br&gt;"</span><span class="p">;}</span>
-<span class="vg">$kalimatbelajar</span> <span class="o">=</span> <span class="n">implode</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="vg">$arraybelajar</span><span class="p">);</span>
-<span class="n">echo</span> <span class="s2">"&lt;h1&gt;sudah di implode jadi seperti di bawah&lt;/h1&gt;&lt;br&gt;"</span><span class="p">;</span>
-<span class="n">echo</span> <span class="vg">$kalimatbelajar</span><span class="p">;</span>
-<span class="sc">?&gt;</span></code></pre></figure>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger btn-xs"</span> <span class="err">@</span><span class="na">click=</span><span class="s">"removeField($index)"</span><span class="nt">&gt;</span>remove row<span class="nt">&lt;/button&gt;</span>                         
 
+  <span class="nt">&lt;/div&gt;</span>
+  
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java">	<span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s">"text/javascript"</span><span class="o">&gt;</span>
+		
+
+<span class="k">new</span> <span class="nf">Vue</span> <span class="o">({</span>
+	<span class="nl">el:</span><span class="s">"#app"</span><span class="o">,</span>
+  <span class="nl">data:</span><span class="o">{</span>
+  	<span class="nl">fields:</span><span class="o">[</span>
+    <span class="o">{</span><span class="nl">nama:</span><span class="err">'</span><span class="n">aditya</span><span class="err">'</span><span class="o">},</span>
+      <span class="o">]</span>
+  <span class="o">},</span>
+  <span class="nl">methods:</span><span class="o">{</span>
+  	<span class="nl">addField:</span><span class="n">function</span><span class="o">(</span><span class="n">index</span><span class="o">){</span>
+    	<span class="k">try</span> <span class="o">{</span>
+                <span class="k">this</span><span class="o">.</span><span class="na">fields</span><span class="o">.</span><span class="na">push</span><span class="o">({</span><span class="nl">nama:</span><span class="err">''</span><span class="o">});</span>
+            <span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">e</span><span class="o">)</span>
+            <span class="o">{</span>
+                <span class="n">console</span><span class="o">.</span><span class="na">log</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+            <span class="o">}</span>
+    <span class="o">},</span>
+    <span class="nl">removeField:</span> <span class="n">function</span> <span class="o">(</span><span class="n">index</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">fields</span><span class="o">.</span><span class="na">splice</span><span class="o">(</span><span class="n">index</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+   	<span class="o">},</span>
+  <span class="o">}</span>
+<span class="o">})</span>
+
+
+	<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span></code></pre></figure>
+
+<p><a href="https://jsfiddle.net/6zbpdvqL/1/" class="btn btn-info">Demo</a></p>
 
       <footer class="entry-meta">
         <span class="entry-tags"></span>
@@ -219,9 +247,9 @@ sebaliknya,  yakni  menggabungkan  array  menjadi  satu  string
         <span class="author vcard"><span class="fn">Aditya Suryadi</span></span>
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/tips&tricks/code-snippets/php/mengabungkan-array-menggunakan-implode-di-php/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/blog/tips&tricks/code-snippets/php/mengabungkan-array-menggunakan-implode-di-php/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/blog/tips&tricks/code-snippets/php/mengabungkan-array-menggunakan-implode-di-php/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/vue.js,jquery,java/script/dynamic-textbox-menggunkan-vue-js/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/vue.js,jquery,java/script/dynamic-textbox-menggunkan-vue-js/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/vue.js,jquery,java/script/dynamic-textbox-menggunkan-vue-js/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
 
@@ -270,23 +298,23 @@ sebaliknya,  yakni  menggabungkan  array  menjadi  satu  string
     <div class="read-more">
   
     <div class="read-more-header">
-      <a href="http://localhost:4000/blog/tips&tricks/code-snippets/php/memecah-string-di-php/" class="read-more-btn">Read More</a>
+      <a href="http://localhost:4000/dynamic_textbox_jquery/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://localhost:4000/vue.js,jquery,java/script/dynamic-textbox-menggunkan-vue-js/" title="Dynamic Textbox Menggunkan Vue Js">Dynamic Textbox Menggunkan Vue Js</a></h3>
-      <p>{% highlight html %}	  Add                                            {{ $index+1 }}           remove row                             {% ...&hellip; <a href="http://localhost:4000/vue.js,jquery,java/script/dynamic-textbox-menggunkan-vue-js/">Continue reading</a></p>
+      <h3><a href="http://localhost:4000/dynamic_textbox_jquery/" title="Dynamic_textbox_jquery">Dynamic_textbox_jquery</a></h3>
+      <p>Menambah dan Menghapus Textbox DinamisHTML	&lt;div id="kmp"&gt;&lt;/div&gt;	&lt;input type="button" class="btn btn-xs btn-primary" value=...&hellip; <a href="http://localhost:4000/dynamic_textbox_jquery/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/dynamic_textbox_jquery/" title="Dynamic_textbox_jquery">Dynamic_textbox_jquery</a></h4>
-        <span>Published on January 25, 2017</span>
+        <h4><a href="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/" title="Backup Db Menggunakan Php Dan Mysql Di Windows">Backup Db Menggunakan Php Dan Mysql Di Windows</a></h4>
+        <span>Published on January 18, 2017</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="http://localhost:4000/backup-db-menggunakan-php-dan-mysql-di-windows/" title="Backup Db Menggunakan Php Dan Mysql Di Windows">Backup Db Menggunakan Php Dan Mysql Di Windows</a></h4>
-        <span>Published on January 18, 2017</span>
+        <h4><a href="http://localhost:4000/php/merubah-string-jadi-variabel/" title="merubah string jadi variabel di PHP">merubah string jadi variabel di PHP</a></h4>
+        <span>Published on January 13, 2017</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->
